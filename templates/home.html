@@ -16,12 +16,15 @@
     </title>
     
   </head>
-  <body class="container">
-    <div id="container">
-      <h1 class="text-center mt-2 mb-4">{{company_name}} </h1>
-      <img class="img-fluid" id="banner" src=https://trashee-website--pashlenetictac2.repl.co/static/banner1.png >
+  <body >
+    {% include 'nav.html' %}
+    <img class="img-fluid" id="banner" src=https://trashee-website--pashlenetictac2.repl.co/static/Organising_Recyclables.jpg >
+    <div class="container">
+      
       <h2 class="text-center mt-2 mb-4"> About Trashee </h2>
-      <p class="lead" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p class="lead" >Trashee is your go-to partner for efficient and responsible waste management. Whether you're a household, a business, or an industrial facility, we specialize in collecting and transporting trash to our advanced waste warehouses.
+
+      Our dedicated team ensures timely pickups and environmentally conscious disposal, focusing on recycling and sustainability. Join Trashee in creating cleaner, greener communities—schedule your pickup today and experience the transformation of waste management with us. Together, let's build a sustainable future.</p>
       <h2 class="text-center mt-2 mb-4">Trash Types</h2>
       <div>
           {% for job in jobs %}
@@ -32,8 +35,9 @@
 
       <div class="text-center" >
         <button class="btn btn-primary btn-lg">Contact Us</button>
-        <p class="mt-4">Copyright 2023,Trashee</p>
+      
       </div>
     </div>
+    {% include 'footer.html' %}
   </body>
 </html>
